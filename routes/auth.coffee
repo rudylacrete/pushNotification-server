@@ -18,7 +18,7 @@ genToken = (user) ->
 validate = (username, password, cb) ->
   user = users.get username
 
-  if username == user.username
+  if user and username == user.username
     process.nextTick ->
       if password == user.password
         cb null, _.omit(user, 'password')
