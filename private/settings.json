@@ -1,0 +1,8 @@
+{
+  "token": {
+    "secret": "secretsecret"
+  },
+  "gcm": {
+    "apiKey": "your_api_key"
+  }
+}
